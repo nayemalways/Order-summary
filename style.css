@@ -1,0 +1,147 @@
+body{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+.container{
+    width:300px;
+    height:500px;
+    position:relative;
+    box-shadow: 2px 2px 30px #ddd;
+    margin:0 auto;
+    top:60px;
+    border-radius: 20px;
+    z-index: 999;
+    background-color: #fff;
+}
+
+.container .up-img img{
+    position:absolute;
+    width:300px;
+    border-radius: 10px;
+}
+
+.container .text{
+     position: absolute;
+     top:150px;
+}
+.container .text h1{
+    font-size: 22px;
+    text-align: center;
+    font-weight: 700;
+}
+.container .text p{
+    font-size: 16px;
+    text-align: center;
+    padding:20px;
+    padding-top:0;
+    color:hsl(224, 23%, 55%);
+    line-height: 1.5rem;
+}
+
+.container .pricing-part{
+    width:85%;
+    height: 80px;
+    display:flex;
+    position: relative;
+    top: 299px;
+    background-color:hsl(225, 100%, 98%);
+    margin-left:20px;
+    border-radius:20px;
+}
+.container .pricing-part img{
+    margin-top:15px;
+    padding-left: 10px;
+}
+.container .price{
+    margin-left: 15px;
+    font-size: 15px;
+}
+.container .price h4{
+    color:hsl(223, 47%, 23%);
+    margin-top: 22px;
+    margin-bottom: 10px;
+}
+.container .price p{
+    color:hsl(224, 23%, 55%);
+    margin-top:-10px;
+}
+.container .pricing-part .chng{
+    margin-top:30px;
+    margin-left: 25px;
+    text-align: center;
+}
+.container .pricing-part div a{
+    color:hsl(228, 77%, 43%);
+    font-size: 15px;
+}
+
+
+.container .payment{
+    position: absolute;
+    bottom:10px;
+}
+.container .payment a{
+    text-decoration: none;
+    color:#fff;
+    background-color:  hsl(245, 75%, 52%);
+    padding:10px 50px;
+    border-radius: 10px;
+    margin-left:20px;
+    font-size: 17px;
+}
+.container .payment a:hover{
+    box-shadow: 5px 10px 30px rgba(59, 81, 223, 0.5);
+}
+.container .payment h5{
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    font-size:15px;
+    cursor:pointer;
+}
+
+
+
+
+/* mobile responsive  */
+
+@media (min-width:300px), (max-width:550px) {
+    body{
+        background-color: hsl(224, 29%, 85%);
+    }
+    .container{
+        height: 550px;
+    }
+    .container .up-img img{
+        width:300px;
+    }
+    .container .text h1{
+        font-size: 20px;
+    }
+    .container .text p{
+        font-size: 15px;
+    }
+
+    .container .pricing-part .price h4{
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+    .container .pricing-part .price p{
+        font-size: 13px
+    }
+    .container .pricing-part .chng a{
+        font-size: 13px;
+        text-align: center;
+    }
+.container .payment{
+    bottom:50px;
+}
+    .container .payment a{
+        padding:10px 50px;
+    }
+}
+
